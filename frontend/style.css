@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f5f7fa;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Section */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Inputs & Select */
+input, select {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Results Container */
+#results {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+/* TABLE STYLING 🔥 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table Head */
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Table Cells */
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+/* Row Hover */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Zebra Striping */
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Messages (No results / error) */
+#results p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  input, select {
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
